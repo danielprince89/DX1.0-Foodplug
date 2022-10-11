@@ -21,7 +21,10 @@
 
 .btn-white{
     background: transparent;
-    
+    border: 2px solid var(--main-color);
+    }
+.btn-white:hover{
+    color: var(--main-color);
 }
 .btn-red:hover{
     color: var(--main-color);
