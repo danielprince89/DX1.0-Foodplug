@@ -6,6 +6,17 @@
     box-sizing: border-box;
 
 }
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+/* @font-face {
+    font-family: "Open Sans";
+    src: url("./font/Lato-Bold.ttf") format("woff2"), url("./font/lato-regular-webfont.woff2")
+        format("woff");
+  } */
 /* page reset stops here */
 
 /* reusables starts here  */
@@ -34,11 +45,46 @@
 
 /* Header section starts here */
 header{
-    border: 3px solid tomato;
+    /* border: 3px solid tomato; */
 }
 
-.nav-desktop{
+.nav-mobile{
+    /* border: 3px solid black; */
+    /* display: flex; */
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    display: none;
+    background: var(--main-color);
+}
+
+.mobile-logo{
+    /* border: 3px solid tomato; */
+    background: var(--main-color);
+    display: flex;
+    color: var(--white-color);
+    align-items: center;
+}
+
+.mobile-logo-container{
+    border: 3px solid var(--white-color);
+    font-size: 25px;
+    padding: 5px;
+}
+
+.mobile-logo span{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+.harmburger{
     border: 3px solid black;
+    height: 40px;
+    width: 40px;
+}
+.nav-desktop{
+    /* border: 3px solid black; */
     display: flex;
     align-items: center;
     position: fixed;
@@ -46,6 +92,7 @@ header{
     top: 0;
     width: 100%;
     justify-content: flex-end;
+    background: var(--white-color);
 }
 
 .desktop-logo{
@@ -64,8 +111,8 @@ header{
 
 .desktop-links-holder{
     display: flex;
-    border: 3px solid var(--main-color);
-    align-items: center;
+    /* border: 3px solid var(--main-color); */
+    align-items: stretch;
 }
 .desktop-links-holder ul{
     list-style: none;
@@ -88,24 +135,64 @@ header{
 .header-banner-section{
     padding-top: 130px;
     min-height: 450px;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     background: url(./img/banner.jpg);
     background-size: cover;
+    padding-bottom: 30px;
 }
 
 .banner-content{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     height: 100%;
     width: 90%;
     margin: 0 auto;
 }
 
 .header-text-container{
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     width: 50%;
 }
 
 .header-icons{
     margin-left: 10px;
+}
+
+.header-text-container h1{
+    color: var(--main-color-dark);
+    font-size: 45px;
+    line-height: 1.2;
+}
+
+.header-text-container p{
+    color: var(--text-color);
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.header-text-container button{
+    margin-right: 10px;
+}
+
+.header-counter-section{
+    /* border: 3px solid tomato; */
+    background: var(--main-color);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    color: var(--white-color);
+}
+
+.counter{
+    /* border: 3px solid black; */
+    text-align: center;
+    width: 100px;
+}
+
+.counter p{
+    margin-top: 5px;
+}
+
+.counter h2{
+    font-size: 30px;
 }
 /* header section ends here */
