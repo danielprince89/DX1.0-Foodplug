@@ -43,6 +43,19 @@ body{
 }
 /* reusables ends here */
 
+.backdrop{
+    width: 100%;
+    height: 100%;
+    background: var(--light-text-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.show-backdrop{
+    display: block;
+}
 /* Header section starts here */
 header{
     /* border: 3px solid tomato; */
@@ -53,7 +66,7 @@ header{
     /* border: 3px solid black; */
     /* display: flex; */
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 10px 30px;
     align-items: center;
     display: none;
     background: var(--main-color);
@@ -88,16 +101,55 @@ header{
     justify-content: center;
 }
 
+.mobile-links-holder{
+    /* border: 3px solid black; */
+    transform: translateX(200%);
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    background: var(--main-color);
+    transition: all 0.9s ease;
+}
+
+.show-mobile-links-holder{
+    transform: translateX(0);
+}
+.mobile-links-holder ul{
+    list-style: none;
+}
+
+.mobile-links-holder a {
+    text-decoration: none;
+    color: var(--white-color);
+    display: block;
+    padding: 24px 0 24px 20px;
+}
+
+.mobile-links-holder button{
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    background: var(--main-color);
+    margin-left: 20px;
+}
+
+.mobile-active-link{
+    background: var(--white-color);
+    color: var(--main-color) !important;
+}
 .showburger .menu{
     background: transparent;
 }
 
 .showburger .menu::before{
     transform: translateY(0) rotate(45deg);
+    background: var(--main-color);
 }
 
 .showburger .menu::after{
     transform: translateY(0) rotate(-45deg);
+    background: var(--main-color);
 }
 
 .menu{
@@ -105,6 +157,7 @@ header{
     width: 100%;
     background: var(--white-color);
     position: relative;
+    z-index: 6;
 }
 
 .menu::before{
