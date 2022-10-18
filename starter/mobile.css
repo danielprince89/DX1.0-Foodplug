@@ -16,8 +16,7 @@
      .nav-mobile{
             display: flex;
         }
-    }
-    /* header section stops here */
+    /* header section stops here */ */
 
     /* Abour us section starts here */
     .aboutus-container{
@@ -33,4 +32,21 @@
         margin: 20px 0;
     }
     /* Abour us section stops here */
+
+    /* explorefood section starts here */
+
+    .explorefoods-card{
+        margin: 20px 0;
+    }
+    /* explorefood section stops here */
+
+    /* faq section starts here  */
+
+    .faq-items{
+        min-width: 100%;
+    }
+    /* faq section stops here  */
+
+
+    }
 
