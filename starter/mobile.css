@@ -57,5 +57,15 @@
     .cta-notice{
         padding: 30px 20px;
     }
+
+    footer{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-icon-holder{
+        margin: 15px 0;
+    }
     }
 
